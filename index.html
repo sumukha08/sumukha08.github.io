@@ -52,7 +52,17 @@ a {
   text-decoration: none;
 }
     </style>
-    <script>
+  </head>
+  <body>
+    <div id="control-panel">
+<p>Click and drag to make more!</p>
+<label>Trails: </label>
+<input type="checkbox" id="trail" name="trail" checked />
+<button id="clear">Clear</button>
+<a href="https://codepen.io/jackrugile/pen/aCzHs" target="_blank">View Version 2</a>
+</div>
+<canvas id="c"></canvas>
+	  <script>
       window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(a){window.setTimeout(a,1E3/60)}}();
 
 document.onselectstart = function() {
@@ -190,15 +200,5 @@ var loop = function(){
             
 loop();
 </script>
-  </head>
-  <body>
-    <div id="control-panel">
-<p>Click and drag to make more!</p>
-<label>Trails: </label>
-<input type="checkbox" id="trail" name="trail" checked />
-<button id="clear">Clear</button>
-<a href="https://codepen.io/jackrugile/pen/aCzHs" target="_blank">View Version 2</a>
-</div>
-<canvas id="c"></canvas>
   </body>
 </html>
